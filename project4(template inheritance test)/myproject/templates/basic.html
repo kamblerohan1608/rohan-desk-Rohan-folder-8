@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+    {% block title %}
+    <!-- title block -->
+    {% endblock title %}
+
+    {% block css %}
+    <!-- css block  -->
+    {% endblock css %}
+</head>
+<body>
+    <h1>This is Demo page</h1>
+    {% block main-body %}
+    <!-- main-body   -->
+    {% endblock main-body %}
+</body>
+</html>
